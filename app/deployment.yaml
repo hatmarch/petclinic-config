@@ -25,7 +25,7 @@ spec:
       containers:
       - name: petclinic
         imagePullPolicy: Always
-        image: image-registry.openshift-image-registry.svc:5000/petclinic-stage/petclinic:stage
+        image: quay.io/mhildenb/tekton-petclinic-initial:latest
         livenessProbe:
           failureThreshold: 3
           httpGet:
